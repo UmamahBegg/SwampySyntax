@@ -22,7 +22,7 @@ function EventCard(props) {
 
     // Update the attending state with the user's joined events
     setAttending(userJoinedEvents);
-  }, [props.user.id]);
+  }, [props.events, props.user.id]);
 
   function handleAttendingClick(eventId) {
     setAttending((prevAttending) => ({
